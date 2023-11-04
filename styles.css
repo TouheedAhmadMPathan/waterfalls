@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    background:#111;
+    flex-direction: column;
+    align-items: center;
+}
+.waterfall {
+    position: relative;
+    width: 960px;
+    height: 801px;
+    background-size: contain;
+    background-image: url("https://cdr2.com/waterfall/waterfall.jpg");
+}
+
+.waterfall>div{
+    position: absolute;
+}
+
+.waterfall-loop {
+    left: 367px;
+    top: 87px;
+    width: 221px;
+    height: 620px;
+    background: url("https://cdr2.com/waterfall/waterfall-loop.png")0 0 repeat-y;
+    -moz-animation: waterfallloop 5s
+    infinite linear;
+    -webkit-animation: waterfallloop 5s infinite linear;
+    -ms-animation:waterfallloop 5s infinite linear;
+    -o-animation: waterfallloop 5s infinite linear;
+}
+@-moz-keyframes waterfallloop{
+    0% {
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 1112px;
+    }
+}
+@-webkit-keyframes waterfallloop {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 1112px;
+    }
+}
+
+@-ms-keyframes waterfallloop {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 1112px;
+    }
+}
+
+@-o-keyframes waterfallloop {
+    0%{
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 1112px;
+    }
+}
+
+.waterfall-mask {
+    width: 960px;
+    height: 801px;
+    background: url("https://cdr2.com/waterfall/waterfall-mask.png") 367px 87px no-repeat;
+}
